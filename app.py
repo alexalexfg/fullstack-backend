@@ -29,6 +29,5 @@ def checksize():
     size =  request.args.get('value')
     if size != 'S':
         return Response("Disponible", 200, {'Access-Control-Allow-Origin': '*'})
-    else:
-        return Response("No Disponible", 200, {'Access-Control-Allow-Origin': '*'})
+    return Response("No Disponible", 200, {'Access-Control-Allow-Origin': '*'})
            
