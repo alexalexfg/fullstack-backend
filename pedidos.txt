@@ -1,5 +1,7 @@
-
-
-Gabriel Garcia. Su pedido se ha realizado correctamente!!
-Pepe Rodriguez. Su pedido se ha realizado correctamente!!
-Pepe Rodriguez. Su pedido se ha realizado correctamente!!
+nombre:  Pedro
+apellidos:  Gil de Diego
+nombre:  Michael
+apellidos:  Jordan
+a a. Su pedido se ha realizado correctamente!!
+p p. Su pedido se ha realizado correctamente!!
+a a. Su pedido se ha realizado correctamente!!

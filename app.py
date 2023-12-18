@@ -1,5 +1,5 @@
 """Aplicación para rellenar los nombres y apellidos"""
-from flask import Flask,request,redirect
+from flask import Flask,request,redirect,Response
 
 
 
@@ -22,3 +22,14 @@ def pizza():
     print(nombre, apellido,". Su pedido se ha realizado correctamente!!")
     return redirect("http://localhost/ejerciciosMaster/modulo1/111-A1/solicita_pedido.html",
                      code=302)
+
+@app.route("/checksize",methods=['POST'])
+def checksize():
+    """Comprueba disponibilidad de un tamaño de pizza."""
+    size =  request.args.get('value')
+    
+    if (size != 'S'):
+       return Response("Disponible", 200, {'Access-Control-Allow-Origin': '*'})
+    else:
+       return Response("No Disponible", 200, {'Access-Control-Allow-Origin': '*'})
+    
