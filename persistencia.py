@@ -8,4 +8,4 @@ def guardar_pedido (nombre, apellido):
         file.write(-nombre + " " + -apellido + "\n")
         file.close()
 
-guardar_pedido("Gabriel","García")
+guardar_pedido("-Gabriel","García")
