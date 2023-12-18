@@ -26,10 +26,9 @@ def pizza():
 @app.route("/checksize",methods=['POST'])
 def checksize():
     """Comprueba disponibilidad de un tamaño de pizza."""
-    size =  request.args.get('value')
-    
-    if (size != 'S'):
+    size =  request.args.get('value') 
+    if size != 'S':
        return Response("Disponible", 200, {'Access-Control-Allow-Origin': '*'})
-    else:
+    if size == 'S':
        return Response("No Disponible", 200, {'Access-Control-Allow-Origin': '*'})
-    
+        
